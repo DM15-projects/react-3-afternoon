@@ -106,7 +106,7 @@ export default class Post extends Component {
               id={this.props.id}
             />
           ) : (
-            <span className="Post__text">{this.props.text}}</span>
+            <span className="Post__text">{this.props.text}</span>
           )}
         </div>
 
