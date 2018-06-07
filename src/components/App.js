@@ -32,10 +32,12 @@ class App extends Component {
   }
 
   updatePost(id, text) {
-    axios.put(`${this.state.baseUrl}/posts?id=${id}, {text}`).then(response => {
-      // console.log(response.data);
-      this.setState({ posts: response.data });
-    });
+    axios
+      .put(`${this.state.baseUrl}/posts?id=${id}`, { text })
+      .then(response => {
+        // console.log(response.data);
+        this.setState({ posts: response.data });
+      });
   }
 
   deletePost(id) {
